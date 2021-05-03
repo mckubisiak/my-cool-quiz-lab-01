@@ -21,6 +21,14 @@ body {
     font-family: 'Titillium Web', sans-serif;
     background-color: var(--color2);
 }
+button {
+    border: none;
+    background:none;
+    border:none;
+    color:#FFF;
+    font-family:Verdana, Geneva, sans-serif;
+    cursor:pointer;
+}
 
 main {
     display: flex;
@@ -28,6 +36,7 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
+    
 }
 
 section {
@@ -47,7 +56,7 @@ section {
 
 header {
     display: flex;
-    justify-content: flex-end;
+    justify-content:center;
     background-color: var(--color3);
     height: var(--header-height);
     box-shadow: var(--shadow);
@@ -72,6 +81,7 @@ h2 {
 
 .main-logo {
     animation: pulse 5s infinite ease-in-out;
+    max-width: 100px;
 }
 
 header img {
@@ -92,10 +102,10 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
-  
-  @keyframes pulse {
+
+@keyframes pulse {
     20% {
-      transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
+        transform: rotate3d(-10, -10, -10, 90deg) scale(1.5);
     }
 
     40% {
@@ -104,10 +114,9 @@ footer {
 
     60% {
         transform: rotate3d(-10, 10, 10, 50deg) scale(1.2);
-      }
+        }
 
     80% {
-        transform: rotate3d(10, 10, 10, 50deg) scale(1);
+        transform: rotate3d(10, 10, 10, 720deg) scale(1);
     }
-
-  }
+}
