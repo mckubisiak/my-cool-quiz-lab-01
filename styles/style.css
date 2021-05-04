@@ -61,6 +61,11 @@ section li {
     background-color: rgb(0, 0, 0);
     opacity: .8;
 }
+.results {
+    color: aliceblue;
+    background-color: rgb(0, 0, 0);
+    opacity: .8;
+}
 section span {
     color: aliceblue;
     background-color: rgb(0, 0, 0);
@@ -107,7 +112,7 @@ h2 {
 }
 
 .main-logo {
-    animation: pulse 5s infinite ease-in-out;
+    animation: pulse 2s infinite ease-in-out;
     max-width: 100px;
 }
 
@@ -132,7 +137,7 @@ footer {
 
 @keyframes pulse {
     20% {
-        transform: rotate3d(-10, -10, -10, 90deg) scale(1.5);
+        transform: rotate3d(-10, -10, -10, 70deg) scale(1.5);
     }
     
     40% {

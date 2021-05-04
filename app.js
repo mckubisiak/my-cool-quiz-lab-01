@@ -1,22 +1,38 @@
-// import functions and grab DOM elements
-// initialize state
-// set event listeners to update state and DOMimport { checkForYes } from './utils.js';
-// import functions and grab DOM elements
-// initialize state
-// set event listeners to update state and DOM
-    // cool zone -- place where stuff happens when we click
-    // - launch an alert to tell the user they are about to take a quiz
-    // - launch a confirm
-    //     - if the user says no, break out of the quiz
-        // the word return STOPS any function. nothing gets past a return
-    // - get the user's first name
-        // - get the user's last name
-    // - launch a prompt with a question
-    //     - when the users answer question store the answer in variable
-    // the problem we have to solve is that users are free to type whatever they want, but we only want a yes or no. We can write a function that reads a user's input and tells us whether it's a yes or a no
-    // - evaluate the answer -- compare it to the correct answer
-    // if the user said yes, given them a point
-        // score++ also works
-        // score++ also works
-        // score++ also works
-    // - finally, display some "results" output in the DOM with the user's name and their score.
+import { checkForYes } from './utils.js';
+
+const kirbyButton = document.getElementById('kirby-button');
+const quizResults = document.getElementById('results');
+
+kirbyButton.addEventListener('click', () => {
+    alert('Welcome to Dream Land, prepare for a kirby quiz!');
+    const takeQuiz = confirm('Do you want to take the quiz?');
+    if (takeQuiz === false) {
+        return;
+    }
+
+    const firstName = prompt('Enter your first name?');
+
+    const lastName = prompt('Enter your last name?');
+
+    const firstAnswer = prompt('Does Kirby live on Earth?');
+
+    let score = 0;
+
+    if (!checkForYes(firstAnswer)) {
+        score = score + 1;
+    }
+
+    const secondAnswer = prompt('Can Kirby turn into a rocket?');
+
+    if (checkForYes(secondAnswer)) {
+        score = score + 1;
+    }
+
+    const thirdAnswer = prompt('Is Meta Knight one of  Kirbys rivals?');
+
+    if (checkForYes(thirdAnswer)) {
+        score = score + 1;
+    }
+
+    quizResults.textContent = `Congratulations ${firstName} ${lastName}! You got ${score} out of 3!`;
+});
