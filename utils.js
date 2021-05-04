@@ -3,3 +3,9 @@ export function checkForYes(userInput) {
 
     return firstLetter === 'y';
 }
+
+export function checkForNo(userInput) {
+    const firstLetter = userInput[0].toLowerCase();
+
+    return firstLetter === 'n';
+}

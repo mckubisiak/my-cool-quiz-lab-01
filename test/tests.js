@@ -1,5 +1,6 @@
 // IMPORT MODULES under test here:
 import { checkForYes } from '../utils.js';
+import { checkForNo } from '../utils.js';
 
 const test = QUnit.test;
 

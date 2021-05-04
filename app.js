@@ -1,4 +1,5 @@
 import { checkForYes } from './utils.js';
+import { checkForNo } from './utils.js';
 
 const kirbyButton = document.getElementById('kirby-button');
 const quizResults = document.getElementById('results');
@@ -18,7 +19,7 @@ kirbyButton.addEventListener('click', () => {
 
     let score = 0;
 
-    if (!checkForYes(firstAnswer)) {
+    if (checkForNo(firstAnswer)) {
         score = score + 1;
     }
 
