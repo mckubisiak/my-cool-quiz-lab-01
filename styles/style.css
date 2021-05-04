@@ -19,7 +19,6 @@ body {
     --footer-height: 25px;
     
     font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
     background-image: url('https://media1.giphy.com/media/5ev3alRsskWA0/giphy.gif');
     background-size: cover;
 }
@@ -62,12 +61,8 @@ section li {
     opacity: .8;
 }
 .results {
-<<<<<<< HEAD
     color: rgb(0, 0, 0);
-=======
-       color: rgb(0, 0, 0);
->>>>>>> 3bd9f22b364c098eb0ae4ed59aff2ce19307f0a4
-    background-color: rgb(223, 95, 206);
+    background-color:RGB(215,72,148);
     opacity: .8;
 }
 section span {

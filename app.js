@@ -33,8 +33,10 @@ kirbyButton.addEventListener('click', () => {
 
     if (checkForYes(thirdAnswer)) {
         score = score + 1;
+
     }
     const percent = (Math.floor((score / 3) * 100));
-    quizResults.textContent = `Congratulations ${firstName} ${lastName}! You got ${score} out of 3! ${percent} %`;
+
+    quizResults.textContent = `Congratulations ${firstName} ${lastName}! You got ${score} out of 3!  (${percent}%)`;
     
 });
