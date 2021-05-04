@@ -20,6 +20,8 @@ body {
     
     font-family: 'Titillium Web', sans-serif;
     background-color: var(--color2);
+    background-image: url('https://media1.giphy.com/media/5ev3alRsskWA0/giphy.gif');
+    background-size: cover;
 }
 button {
     border: none;
@@ -40,19 +42,41 @@ main {
 }
 
 section {
-    background-color: var(--color5);
+
     width: 1000px;
-    max-width: 80%;
+    max-width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: var(--gutter);
+    /* padding-top: var(--gutter);
     padding-bottom: var(--gutter);
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
-    border: solid 2px var(--color1);
+    border: solid 2px var(--color1); */
+    font-size: .8rem;
 }
+section li {
+    color: aliceblue;
+    background-color: rgb(0, 0, 0);
+    opacity: .8;
+}
+section span {
+    color: aliceblue;
+    background-color: rgb(0, 0, 0);
+    opacity: .8;
+}
+section p {
+    color: aliceblue;
+    background-color: rgb(0, 0, 0);
+    opacity: .8;
+}
+section label {
+    color: aliceblue;
+    background-color: rgb(0, 0, 0);
+    opacity: .75;
+}
+
 
 header {
     display: flex;
@@ -75,6 +99,9 @@ h2 {
     font-weight: bold;
 }
 
+.secondlist {
+    
+}
 .gutter-right {
     margin-right: 20px;
 }
@@ -91,7 +118,7 @@ header img {
 p {
     margin: var(--gutter);
 }
-  
+
 footer {
     position: fixed;
     width: 100%;
@@ -107,16 +134,22 @@ footer {
     20% {
         transform: rotate3d(-10, -10, -10, 90deg) scale(1.5);
     }
-
+    
     40% {
         transform: rotate3d(10, 10, -10, 50deg) scale(1);
     }
-
+    
     60% {
         transform: rotate3d(-10, 10, 10, 50deg) scale(1.2);
-        }
-
+    }
+    
     80% {
         transform: rotate3d(10, 10, 10, 720deg) scale(1);
     }
+}
+
+.order {
+    color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    opacity: .8;
 }
