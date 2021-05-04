@@ -62,7 +62,11 @@ section li {
     opacity: .8;
 }
 .results {
+<<<<<<< HEAD
     color: rgb(0, 0, 0);
+=======
+       color: rgb(0, 0, 0);
+>>>>>>> 3bd9f22b364c098eb0ae4ed59aff2ce19307f0a4
     background-color: rgb(223, 95, 206);
     opacity: .8;
 }
